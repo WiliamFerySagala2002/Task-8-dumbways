@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/testimony.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="wrapperlogo">
+        <div class="logo">
+          <p>DW</p>
+          <span>DUMBWAYS.ID</span>
+        </div>
+        <nav class="navMenu">
+          <ul>
+            <li>
+              <i class="fa-solid fa-house"></i>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-briefcase"></i>
+              <a href="project.html">Project</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-star"></i>
+              <a href="testimony.html">Testimony</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="btnContactNav">
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div id="btnHumbMenu">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+    <div class="humMenu">
+      <div class="btnGroup">
+        <div id="closeMenu">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+      <div class="text">
+        <div class="humSqureImg"></div>
+        <div class="txt">
+          <p>Wiliam Fery Sagala</p>
+          <span>sagalawiliam0@gmail.com</span>
+        </div>
+      </div>
+      <div class="humbWrapper">
+        <nav>
+          <ul>
+            <li>
+              <i class="fa-solid fa-house"></i>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-briefcase"></i>
+              <a href="project.html">Project</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-star"></i>
+              <a href="project.html">Testimony</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="btnContact">
+          <i class="fa-solid fa-message"></i>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <div class="title">Testimony</div>
+      <div class="rating">
+        <div>
+          <button onclick="allTestimony()">all review</button>
+        </div>
+        <div>
+          <button onclick="filterStars(1)">
+            1 <i class="fa-solid fa-star"></i>
+          </button>
+        </div>
+        <div>
+          <button onclick="filterStars(2)">
+            2 <i class="fa-solid fa-star"></i>
+          </button>
+        </div>
+        <div>
+          <button onclick="filterStars(3)">
+            3 <i class="fa-solid fa-star"></i>
+          </button>
+        </div>
+        <div>
+          <button onclick="filterStars(4)">
+            4 <i class="fa-solid fa-star"></i>
+          </button>
+        </div>
+        <div>
+          <button onclick="filterStars(5)">
+            5 <i class="fa-solid fa-star"></i>
+          </button>
+        </div>
+      </div>
+      <div id="testimony"></div>
+    </main>
+    <script src="assets/js/testi.js"></script>
+    <script src="assets/js/humbNav.js"></script>
+  </body>
+</html>

@@ -1,0 +1,212 @@
+header {
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  padding: 10px 15px;
+  align-items: center;
+  background: #dedede;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  color: #ff0000;
+}
+
+.logo p {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: -10px;
+}
+
+.logo span {
+  font-size: 8px;
+}
+
+i.fa-solid.fa-bars {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+.humMenu {
+  display: none;
+  position: fixed;
+  background: #ffffff;
+  height: 100vh;
+  width: 80%;
+  top: 0;
+  left: 0;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  animation: ease-in;
+}
+
+.btnGroup {
+  background: #dfdfdf;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  padding: 2px 8px;
+}
+
+.btnGroup i {
+  font-size: 1.2rem;
+}
+
+.text {
+  padding: 15px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+
+.text .humSqureImg {
+  width: 40px;
+  height: 40px;
+  background-image: url("/assets/img/pp2.png");
+  background-color: #ff0000;
+  border-radius: 999px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.txt {
+  display: flex;
+  flex-direction: column;
+}
+
+.navMenu {
+  display: none;
+}
+
+.txt p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.txt span {
+  font-size: 10px;
+  color: #848484;
+}
+
+.humbWrapper {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.humbWrapper nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.humbWrapper nav ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ff0000;
+  padding: 8px 5px;
+}
+
+.btnContact {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ff0000;
+  padding: 8px 5px;
+}
+
+.humbWrapper nav ul li:hover,
+.btnContact:hover {
+  background-color: #ff000079;
+  border-radius: 8px;
+}
+
+.humbWrapper a {
+  color: black;
+}
+
+.btnContactNav {
+  display: none;
+}
+
+.humbWrapper i.fa-solid {
+  font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    padding: 10px 70px;
+    background: #fff;
+  }
+
+  .logo p {
+    font-size: 2.4rem;
+    margin-bottom: -15px;
+  }
+
+  .logo span {
+    font-size: 10px;
+  }
+
+  .wrapperlogo {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .wrapperlogo nav ul li i {
+    display: none;
+  }
+
+  .wrapperlogo nav ul li a {
+    font-size: 1.19rem;
+    color: #000;
+  }
+
+  .wrapperlogo nav ul li a:hover {
+    color: #ff0000;
+  }
+
+  .navMenu {
+    display: block;
+  }
+
+  .navMenu ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .btnContactNav {
+    display: block;
+  }
+
+  .btnContactNav a {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 6px 10px;
+    background-color: #ff0000;
+    border-radius: 8px;
+  }
+
+  .btnContactNav a:hover {
+    color: #ff0000;
+    background-color: #fff;
+    border: 2px solid #ff0000;
+  }
+
+  #btnHumbMenu {
+    display: none;
+  }
+}

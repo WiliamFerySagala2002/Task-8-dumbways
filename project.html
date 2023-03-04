@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/project.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="wrapperlogo">
+        <div class="logo">
+          <p>DW</p>
+          <span>DUMBWAYS.ID</span>
+        </div>
+        <nav class="navMenu">
+          <ul>
+            <li>
+              <i class="fa-solid fa-house"></i>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-briefcase"></i>
+              <a href="project.html">Project</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-star"></i>
+              <a href="testimony.html">Testimony</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="btnContactNav">
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div id="btnHumbMenu">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+    <div class="humMenu">
+      <div class="btnGroup">
+        <div id="closeMenu">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+      <div class="text">
+        <div class="humSqureImg"></div>
+        <div class="txt">
+          <p>Wiliam Fery Sagala</p>
+          <span>sagalawiliam0@gmail.com</span>
+        </div>
+      </div>
+      <div class="humbWrapper">
+        <nav>
+          <ul>
+            <li>
+              <i class="fa-solid fa-house"></i>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-briefcase"></i>
+              <a href="project.html">Project</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-star"></i>
+              <a href="testimony.html">Testimony</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="btnContact">
+          <i class="fa-solid fa-message"></i>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <div class="form-wrapper">
+        <form class="login">
+          <div class="input">
+            <label for="title">Project Name</label>
+            <input type="text" name="title" id="title" required />
+          </div>
+
+          <div class="start-end">
+            <div class="start">
+              <label for="start">Start Date</label>
+              <input type="date" name="start" id="start" required />
+            </div>
+            <div class="end">
+              <label for="end">End Date</label>
+              <input type="date" name="end" id="end" required />
+            </div>
+          </div>
+
+          <div class="input">
+            <label for="info">Description</label>
+            <textarea
+              name="description"
+              id="info"
+              cols="28"
+              rows="5"
+              required
+            ></textarea>
+          </div>
+
+          <div class="input">
+            <label for="">Technologies</label>
+            <div class="techno-wrapper">
+              <div class="row">
+                <div class="node check">
+                  <input
+                    type="checkbox"
+                    name="technology"
+                    id="node"
+                    class="box"
+                  />
+                  <label for="node">Node Js</label>
+                </div>
+                <div class="next check">
+                  <input
+                    type="checkbox"
+                    name="technology"
+                    id="vue"
+                    class="box"
+                  />
+                  <label for="vue">Vue Js</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="react check">
+                  <input
+                    type="checkbox"
+                    name="technology"
+                    id="react"
+                    class="box"
+                  />
+                  <label for="react">React Js</label>
+                </div>
+
+                <div class="java check">
+                  <input
+                    type="checkbox"
+                    name="technology"
+                    id="java"
+                    class="box"
+                  />
+                  <label for="java">Java</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="upload-wrapper">
+            <label for="image">Upload Image</label>
+            <div class="file-wrapper">
+              <div class="label">
+                <label for="image">choose</label>
+              </div>
+              <input type="file" name="image" id="image" hidden />
+              <div class="icon-upload">
+                <label for="image" class="container-upload">
+                  <img src="/assets/img/file.png" alt="" for="image" />
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="buttonProject">
+            <input type="submit" value="Submit" id="Submit" />
+          </div>
+        </form>
+      </div>
+
+      <div class="container-project">
+        <div class="title">
+          <h2>My Project</h2>
+        </div>
+        <div class="wrapperProject">
+          <div class="wrapper">
+            <div class="content-card card">
+              <div class="profile">
+                <div class="card-img">
+                  <img
+                    src="/assets/img/bg-cam.jpg"
+                    alt="${dataProject.nameProject}"
+                  />
+                </div>
+                <div class="name">
+                  <a href="project-detail.html"
+                    >Website Project Dumbways 2023</a
+                  >
+                  <p>durasi : 1 month</p>
+                </div>
+              </div>
+              <div class="text-info">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  liquid ratione dolorum reprehenderit lore
+                </p>
+              </div>
+              <div class="tech-icons-card mt">
+                <i class="fa-brands fa-node"></i>
+                <i class="fa-brands fa-vuejs"></i>
+                <i class="fa-brands fa-react"></i>
+                <i class="fa-brands fa-java"></i>
+              </div>
+              <div class="btn-card-group">
+                <button>edit</button>
+                <button>delete</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://kit.fontawesome.com/c92e202055.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/assets/js/project.js"></script>
+
+    <script src="assets/js/humbNav.js"></script>
+  </body>
+</html>

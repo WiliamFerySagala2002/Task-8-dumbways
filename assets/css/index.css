@@ -1,0 +1,260 @@
+body {
+  background: #fff;
+}
+
+header {
+  background: #e2e2e2 !important;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0 15px;
+}
+
+.container .left article {
+  padding: 0 20px;
+}
+
+.container .left article h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.container .left article p {
+  text-align: justify;
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+  letter-spacing: 0px;
+}
+
+.grupBtn {
+  display: flex;
+  padding: 2px 20px;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.grupBtn .cv {
+  background: #ff0000;
+  border: 2px solid #f32222;
+  padding: 4px 6px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.grupBtn .cv:hover {
+  background-color: #fff;
+  color: #f32222;
+}
+
+.socmed {
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.socmed a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  border-radius: 99px;
+  margin-bottom: 10px;
+}
+
+.socmed a.logos {
+  background: #000000;
+}
+
+.socmed a.logos i {
+  color: #ffffff;
+}
+
+i.fb {
+  font-size: 40px;
+  margin: auto 0;
+  color: #000000;
+}
+
+a.ig:hover {
+  background: rgb(254, 254, 254);
+  background: linear-gradient(
+    180deg,
+    rgba(254, 254, 254, 1) 0%,
+    rgba(253, 5, 179, 1) 39%,
+    rgba(252, 121, 77, 1) 78%,
+    rgba(255, 255, 255, 1) 97%
+  );
+}
+
+i.fb:hover {
+  color: #0051ff;
+}
+
+a.twit:hover {
+  background: #00aaff;
+}
+
+a.twit i:hover {
+  color: #fff;
+}
+
+a.in:hover {
+  background: #0389ec;
+}
+
+.wrapper {
+  width: 80%;
+  height: 360px;
+  margin: 0 auto;
+}
+
+.right {
+  width: 300px;
+}
+
+.card {
+  box-shadow: 2px 2px 10px rgb(0 0 0 / 24%);
+  border-radius: 8px;
+}
+
+.card-img {
+  width: 100%;
+  height: 330px;
+  background: url("/assets/img/bg-cam.jpg");
+  background-size: cover;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.card-txt {
+  padding: 10px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    background: #e2e2e2;
+  }
+  main {
+    padding: 10px;
+  }
+
+  header {
+    background: #fff !important;
+    box-shadow: 0 4px 4px rgb(0 0 0 / 24%);
+  }
+  .container {
+    flex-direction: row;
+    margin: 100px 0;
+    box-shadow: 2px 2px 10px rgb(0 0 0 / 24%);
+    padding: 10px 0;
+    padding: 8px;
+    background: #fff;
+    justify-content: space-around;
+  }
+
+  .card-img {
+    width: 100%;
+  }
+
+  .right {
+    width: 250px;
+  }
+
+  .left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .socmed {
+    justify-content: start;
+    padding: 0 25px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .container {
+    width: 90%;
+    padding: 50px 8px;
+    margin: 100px auto;
+  }
+
+  .right {
+    width: 300px;
+  }
+
+  .container .left article {
+    padding: 0;
+    margin-bottom: 10px;
+  }
+
+  .container .left article h3 {
+    font-size: 2rem;
+  }
+
+  .container .left article p {
+    font-size: 1.2rem;
+  }
+
+  .grupBtn {
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+  .cv span {
+    font-size: 1.2rem;
+  }
+
+  .socmed {
+    align-items: center;
+    padding: 0;
+  }
+
+  .socmed a {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    margin: auto 0;
+  }
+
+  a.logos i {
+    font-size: 30px;
+    margin: auto 0;
+  }
+
+  i.fb {
+    font-size: 50px;
+  }
+
+  a.fb {
+    margin: auto 0;
+  }
+}

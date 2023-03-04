@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/contact.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="wrapperlogo">
+        <div class="logo">
+          <p>DW</p>
+          <span>DUMBWAYS.ID</span>
+        </div>
+        <nav class="navMenu">
+          <ul>
+            <li>
+              <i class="fa-solid fa-house"></i>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-briefcase"></i>
+              <a href="project.html">Project</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-star"></i>
+              <a href="testimony.html">Testimony</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="btnContactNav">
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div id="btnHumbMenu">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+    <div class="humMenu">
+      <div class="btnGroup">
+        <div id="closeMenu">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+      <div class="text">
+        <div class="humSqureImg"></div>
+        <div class="txt">
+          <p>Wiliam Fery Sagala</p>
+          <span>sagalawiliam0@gmail.com</span>
+        </div>
+      </div>
+      <div class="humbWrapper">
+        <nav>
+          <ul>
+            <li>
+              <i class="fa-solid fa-house"></i>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-briefcase"></i>
+              <a href="project.html">Project</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-star"></i>
+              <a href="testimony.html">Testimony</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="btnContact">
+          <i class="fa-solid fa-message"></i>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <label for="subject">Subject:</label>
+        <select id="subject" name="subject" required>
+          <option></option>
+          <option value="collaboration">Collaboration</option>
+          <option value="discussion">Discussion</option>
+          <option value="hiring">Hiring</option>
+        </select>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <div class="buttonSubmit">
+          <button type="submit" onclick="getData()">submit</button>
+        </div>
+      </form>
+    </main>
+
+    <script src="assets/js/humbNav.js"></script>
+    <script src="/assets/js/contact.js"></script>
+  </body>
+</html>
